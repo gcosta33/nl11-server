@@ -1,5 +1,6 @@
 import { fastify } from 'fastify'
 
+const port = 3333
 const app = fastify()
 
 app.get('/', () => {
@@ -7,6 +8,7 @@ app.get('/', () => {
 })
 
 app.listen({
-    port:3333,
-    
+    port: port,
+}).then(() => {
+    console.log(`Server is running on ${port}`)
 })

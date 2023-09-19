@@ -1,1 +1,8 @@
 node_modules
+.env
+pnpm-lock.yaml
+
+# prima files
+dev.db
+dev.db-journal
+migrations
