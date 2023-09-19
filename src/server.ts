@@ -1,11 +1,13 @@
 import { fastify } from 'fastify'
+import { prisma } from './lib/prima'
+import { getAllPrompstRoute } from './routes/get-all-prompts'
+import { uploadVideoRoute } from './routes/uplaod-video'
 
 const port = 3333
 const app = fastify()
 
-app.get('/', () => {
-    return 'Hello word'
-})
+app.register(getAllPrompstRoute)
+app.register(uploadVideoRoute)
 
 app.listen({
     port: port,

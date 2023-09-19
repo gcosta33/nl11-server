@@ -6,3 +6,7 @@ pnpm-lock.yaml
 dev.db
 dev.db-journal
 migrations
+
+# files
+tmp
+examples
